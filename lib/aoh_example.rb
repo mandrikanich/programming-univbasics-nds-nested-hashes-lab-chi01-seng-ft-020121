@@ -30,9 +30,10 @@ def aoh_lookup(aoh, row, key)
 end
 
 def aoh_update(aoh, row, key, new_value)
-  aoh[row][key][new_value]
-  binding.pry
+  aoh[row][key]=new_value
+  #binding.pry
   # Update the AoH data at row and key to have the value of new_value
   # Return the updated AoH
   #expect(result[1][:name]).to eq("Joelle van Dyne (PGOAT)"
+  aoh
 end
